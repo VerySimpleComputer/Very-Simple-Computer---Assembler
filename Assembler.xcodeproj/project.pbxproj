@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8451ABB31BD1BBCA00911F3C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8451ABB21BD1BBCA00911F3C /* main.c */; };
+		8451ABBC1BD295F600911F3C /* FileIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8451ABBA1BD295F600911F3C /* FileIO.c */; settings = {ASSET_TAGS = (); }; };
+		8451ABBF1BD4583400911F3C /* Assembler.c in Sources */ = {isa = PBXBuildFile; fileRef = 8451ABBD1BD4583400911F3C /* Assembler.c */; settings = {ASSET_TAGS = (); }; };
+		8451ABC21BD4F62200911F3C /* Buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8451ABC01BD4F62200911F3C /* Buffer.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		8451ABAF1BD1BBCA00911F3C /* Assembler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assembler; sourceTree = BUILT_PRODUCTS_DIR; };
 		8451ABB21BD1BBCA00911F3C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8451ABB91BD1BBE200911F3C /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		8451ABBA1BD295F600911F3C /* FileIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FileIO.c; sourceTree = "<group>"; };
+		8451ABBB1BD295F600911F3C /* FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = "<group>"; };
+		8451ABBD1BD4583400911F3C /* Assembler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Assembler.c; sourceTree = "<group>"; };
+		8451ABBE1BD4583400911F3C /* Assembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assembler.h; sourceTree = "<group>"; };
+		8451ABC01BD4F62200911F3C /* Buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buffer.c; sourceTree = "<group>"; };
+		8451ABC11BD4F62200911F3C /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				8451ABB21BD1BBCA00911F3C /* main.c */,
+				8451ABB91BD1BBE200911F3C /* test.txt */,
+				8451ABBA1BD295F600911F3C /* FileIO.c */,
+				8451ABBB1BD295F600911F3C /* FileIO.h */,
+				8451ABBD1BD4583400911F3C /* Assembler.c */,
+				8451ABBE1BD4583400911F3C /* Assembler.h */,
+				8451ABC01BD4F62200911F3C /* Buffer.c */,
+				8451ABC11BD4F62200911F3C /* Buffer.h */,
 			);
 			path = Assembler;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8451ABBF1BD4583400911F3C /* Assembler.c in Sources */,
 				8451ABB31BD1BBCA00911F3C /* main.c in Sources */,
+				8451ABBC1BD295F600911F3C /* FileIO.c in Sources */,
+				8451ABC21BD4F62200911F3C /* Buffer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

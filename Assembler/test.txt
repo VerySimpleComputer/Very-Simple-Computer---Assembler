@@ -1,0 +1,46 @@
+;
+; Very Simple Computer Assembler
+;
+; A basic assembler for the very simple computer.
+;
+; Instruction Set:
+;   1. LDA <addr>; Load the accumulator with the value from memory at address <addr>.
+;   2. STO <addr>; Store the value in the accumulator into memory at address <addr>.
+;   3. ADD <addr>; Add the value in memory at <addr> to the value in the accumulator and store in LAT1.
+;   4. CMP <addr>; Take the 1's complement of the value in memory at address <addr>
+;   5. BNN <addr>; Set Program Counter = addr, if the value in the accumulator is NOT negative.
+;   6. SHL <addr>; Shift value in memory at address <addr> one bit to the left.
+;   7. SHR <addr>; Shift value in memory at address <addr> one bit to the right.
+;   8. HLT <addr>; Terminate the fetch-execute cycle.
+;
+; Op Codes:
+;
+;   1. LDA = 000
+;   2. STA = 001
+;   3. ADD = 010
+;   4. CMP = 011
+;   5. BNN = 100
+;   6. SHL = 101
+;   7. SHR = 110
+;   8. HLT = 111
+;
+;
+; An example program.
+;
+
+.data
+
+    COUNT   = 10
+    MINUS1  = -1
+    SUM     = 0
+
+.code
+
+LDA COUNT   ; Load COUNT into the accumulator.
+ADD SUM     ; Add sum to the value in the accumulator.
+STO SUM     ; Store the value in the accumulator into the memory address of SUM
+LDA COUNT   ; Load COUNT into the accumulator.
+ADD MINUS1  ; Subtract 1 from COUNT.
+STO COUNT   ; Store the value of the accumulator into the memory address of COUNT.
+BNN 00000   ; Branch to the top, if the value of the accumulator is NOT negative.
+HLT         ; Stop the machine.
