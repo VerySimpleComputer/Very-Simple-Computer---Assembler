@@ -47,6 +47,17 @@ void buffer_destroy(buffer *buff) {
     free(buff);
 }
 
+void buffer_print_detailed(buffer *b) {
+    
+    printf("Buffer {\n");
+    
+    for(int i = 0; i < b->size; i++)
+    {
+        char c = b->buffer[i];
+        
+        printf("[%d] => %c (%d)\n", i, c, c);
+    }
+}
 
 
 void buffer_print(buffer *b) {
@@ -59,7 +70,7 @@ void buffer_print(buffer *b) {
         printf("%c", c);
     }
     
-    printf("\n }\n");
+    printf("}\n");
 }
 
 

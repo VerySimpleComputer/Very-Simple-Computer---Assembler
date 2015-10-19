@@ -24,6 +24,7 @@ buffer *buffer_init(unsigned long size);
 void buffer_destroy(buffer *b);
 
 void buffer_print(buffer *b);
+void buffer_print_detailed(buffer *b);
 
 void buffer_allocation_failed(unsigned long size, int line);
 
